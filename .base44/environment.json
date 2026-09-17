@@ -1,0 +1,22 @@
+{
+  "previewPort": 3000,
+  "healthPath": "/",
+  "startCommand": "docker compose -f docker-compose.base44.yml up -d",
+  "secrets": [
+    {
+      "name": "NEXT_PUBLIC_GTM_ID",
+      "description": "Google Tag Manager container ID (e.g. GTM-XXXXXX). Public browser identifier, not a secret. Optional — blank disables tracking but the shop still works.",
+      "requiredAtBoot": false
+    },
+    {
+      "name": "NEXT_PUBLIC_COOKIEBOT_ID",
+      "description": "Cookiebot Domain Group ID (UUID format). Public browser identifier, not a secret. Optional — blank disables the consent banner but the shop still works.",
+      "requiredAtBoot": false
+    },
+    {
+      "name": "NEXT_PUBLIC_ALLOWED_HOSTS",
+      "description": "Comma-separated hostnames allowed for consent validation (no protocol/port/path). Optional — defaults to localhost,127.0.0.1.",
+      "requiredAtBoot": false
+    }
+  ]
+}
