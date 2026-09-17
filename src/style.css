@@ -74,8 +74,8 @@ a {
 }
 .announcement {
   padding: 9px 20px;
-  background: var(--ink);
-  color: #f4f4e9;
+  background: #f4f4e9;
+  color: var(--ink);
   text-align: center;
   font-size: 10px;
   letter-spacing: 0.8px;
